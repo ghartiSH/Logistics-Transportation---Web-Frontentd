@@ -1,0 +1,104 @@
+*{
+    margin:auto;
+}
+
+.body{
+    overflow: hidden;
+}
+.main{
+    padding: 200px 0px;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "RaleWay";
+    line-height: 1.5;
+}
+
+.mid{
+    padding: 50px 0px;
+    display: flex;
+}
+
+.mid-box{
+    width: 30%;
+    padding: 50px;
+    border: solid 2px;
+}
+
+.plane{
+    padding: 150px 0px;
+}
+
+.plane-text{
+    color: white;
+    width: 30%;
+    margin-left: 50%;
+}
+
+.air-freight{
+    padding:80px 0px;
+}
+
+.underline{
+    position: relative;
+    text-decoration: none;
+}
+
+.underline::after{
+    position: absolute;
+    content: '';
+    height: 3px;
+    background: #34ccff;
+    width: 50px;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.icons{
+    width: 60%;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color:#828282 ;
+}
+
+.image{
+    width: 24%;
+    height: 400px;
+    border: solid 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+}
+@media screen and (max-width:1600px) {
+     .icons{
+         width: 90%;
+     }
+}
+
+@media screen and (max-width:1200px) {
+    
+}
+@media screen and (max-width:900px) {
+    .mid{
+        flex-direction: column;
+    }
+
+    .mid-box{
+        width: 90%;
+        padding: 50px 10px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .icons{
+        flex-direction: column;
+    }
+
+    .image{
+        width: 100%;
+    }
+}

@@ -1,0 +1,61 @@
+.body{
+    overflow: hidden;
+}
+.main{
+    padding: 80px 0px;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "RaleWay-dark";
+}
+
+.ads{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+
+}
+
+.ad-container{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hover-ad{
+    color: white;
+    text-align: center;
+    display: none;
+}
+.ad-container:hover{
+    background-color: #36ccff;
+    img{
+        display: none;
+        
+    }
+    .hover-ad{
+        display: block;
+    }
+    
+}
+
+@media screen and (max-width:1600px) {
+     
+}
+
+@media screen and (max-width:1200px) {
+    .ads{
+        grid-template-columns: auto auto auto;
+    }
+}
+@media screen and (max-width:900px) {
+    .ads{
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .ads{
+        grid-template-columns: auto;
+    }
+}

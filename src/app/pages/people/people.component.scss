@@ -1,0 +1,13 @@
+@import url(../customers/customers.component.scss);
+.profile{
+    margin-top: 30px;
+    display: flex;
+    img{
+        margin-left: 0px;
+        width: 30%;
+    }
+}
+.info{
+    width: 70%;
+    margin-left: 10px;
+}

@@ -1,0 +1,50 @@
+@import url(../logistics/logistics.component.scss);
+
+.warehouse-containers{
+    width: 60%;
+    padding-bottom: 50px;
+}
+
+.progress{
+    margin-top: 80px;
+    display: flex;
+}
+
+.grey{
+    width: 95%;
+    height: 30px;
+    background-color: lightgrey;
+    margin-top: 10px;
+}
+
+.prog-bar{
+    height: 100%;
+    background-color: blue;
+    margin-left: 0px;
+
+}
+.progress-box{
+    width: 48%;
+}
+@media screen and (max-width:1600px) {
+     .warehouse-containers{
+         width: 90%;
+     }
+}
+
+@media screen and (max-width:1200px) {
+    
+}
+@media screen and (max-width:900px) {
+    
+}
+
+@media screen and (max-width:500px) {
+
+    .progress{
+        flex-direction: column;
+    }
+    .progress-box{
+        width: 100%;
+    }
+}

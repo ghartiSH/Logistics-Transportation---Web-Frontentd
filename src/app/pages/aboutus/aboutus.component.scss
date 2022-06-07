@@ -1,0 +1,192 @@
+
+*{
+    margin: auto;
+}
+
+.body{
+    overflow: hidden;
+}
+.main{
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "RaleWay-dark";
+    line-height: 1.5;
+}
+
+i,mat-icon{
+    color: #34ccff;
+    font-size: 80px;
+}
+.icons{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    text-align: center;
+    width: 60%;
+}
+.underline{
+    position: relative;
+    text-decoration: none;
+}
+
+.underline::after{
+    position: absolute;
+    content: '';
+    height: 1px;
+    background: white;
+    width: 50px;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.blue-underline{
+    position: relative;
+    text-decoration: none;
+}
+
+.blue-underline::after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    background: #34ccff;
+    width: 50px;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+}
+
+.building{
+    width: 60%;
+    display: flex;
+}
+
+.ribbon{
+    background-color: #edf4f6;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.container{
+    width: 60%;
+}
+
+.values{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.values-container{
+    width: 60%;
+    display: flex;
+    .left{
+        width: 70%;
+        padding-right: 50px;
+        margin-top: 0px;
+    }
+    .right{
+        width: 30%;
+        text-align: center;
+        margin-top: 0px;
+    }
+}
+
+.buttons{
+    margin-top: 30px;
+    button{
+        background: transparent;
+        outline: none;
+        border: solid 1px lightgray;
+        padding:10px 20px;
+    }
+
+    button:hover{
+        background-color: #34ccff;
+        color: white;
+    }
+}
+
+.mountains{
+    padding: 80px 0px;
+    color: white;
+}
+
+.textbox{
+    width: 48%;
+}
+
+table, td{
+    border: solid 1px lightgray;
+    border-collapse: collapse;
+}
+ td{
+     padding: 5px 200px 0px 10px;
+ }
+
+ td:hover{
+     p{
+         padding-left: 10px;
+     }
+     background-color: #34ccff;
+     color: white;
+ }
+
+ .see-more{
+     outline: none;
+     background-color: #5472d2;
+     border: none;
+     border-radius: 25px;
+     color: white;
+     padding: 0px 10px;
+ }
+
+ @media screen and (max-width:1600px) {
+     .icons{
+         width: 90%;
+         
+     }
+
+     .building{
+         width: 90%;
+     }
+
+     .container{
+         width: 90%;
+     }
+
+     .values-container{
+         width: 90%;
+     }
+     
+ }
+
+ @media screen and (max-width:1200px) {
+     
+}
+@media screen and (max-width:900px) {
+     .building{
+        flex-direction: column;
+     }
+
+     .values-container{
+         flex-direction: column;
+         .left{
+            width: 90%;
+            padding-right: 0px;
+            margin-top: 20px;
+        }
+        .right{
+            width: 70%;
+        }
+     }
+
+     .textbox{
+         width: 100%;
+     }
+}
+
+@media screen and (max-width:500px) {
+     
+}

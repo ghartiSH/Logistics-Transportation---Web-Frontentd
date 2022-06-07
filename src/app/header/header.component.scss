@@ -1,0 +1,124 @@
+*{
+    margin: auto;
+}
+
+.header{
+    height: 100px;
+    display: flex;
+    padding: 0px 50px;
+    overflow: hidden;
+    box-shadow: 3px 3px  #F8F4F4 ;
+}
+
+.logo{
+    margin-left: 0px;
+}
+
+
+
+.list{
+    display: flex;
+    margin-right: 0px;
+    font-family: "RaleWay-dark";
+    font-size: 14px;
+    font-weight: 900;
+    cursor: pointer;
+    overflow: hidden;
+    ul{
+        list-style: none;
+        display: flex;
+
+        li{
+            padding:10px 12px;
+        }
+    }
+    
+}
+a{
+    text-decoration: none;
+    color: rgba(0,0,0,1);
+}
+a:hover{
+    color: #34ccff;
+}
+.resp1{
+    display: none;
+}
+.resp2{
+    display: flex;
+}
+.resp3{
+    display: none;
+    margin-right: 20px;
+}
+
+.button-list{
+    border-radius: 25px;
+}
+
+.link{
+    outline: none;
+    background: transparent;
+    border: none;
+    font-family: "RaleWay-dark";
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.link:hover{
+    background: none;
+    color: #34ccff;
+}
+
+.click{
+    font-family: "Raleway";
+    font-size: 12px;
+    padding: 0px 120px 0px 20px;
+}
+.click:hover{
+    color: #34ccff;
+    background-color:black ;
+}
+
+@media screen and (max-width:1500px){
+    .list{
+        ul{
+            font-size: 12px;
+            li{
+                padding: 10px 5px;
+            }
+        }
+    }
+    .link{
+        font-size: 12px;
+    }
+}
+
+
+@media screen and (max-width:1300px) {
+    .resp1{
+        display: flex;
+    }
+    .resp2{
+        display: none;
+    }
+
+    .logo-image{
+        height: 50px;
+    }
+}
+@media screen and (max-width:1100px) {
+    .list{
+        ul{
+            display: none;
+        }
+        .resp3{
+            display: flex;
+        }
+    }
+}
+@media screen and (max-width:500px) {
+    .header{
+        padding:0px 20px;
+    } 
+}

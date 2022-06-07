@@ -1,0 +1,110 @@
+*{
+    margin: auto;
+}
+.body{
+    overflow: hidden;
+}
+
+.main{
+    padding: 60px 0px;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: "RaleWay-dark";
+    line-height: 1.5;
+}
+
+.content{
+    width: 60%;
+}
+
+.boody{
+    width: 60%;
+    padding: 50px 0px;
+    display: flex;
+}
+
+.left{
+    width: 30%;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+.right{
+    width: 65%;
+    margin-right: 0px;
+    margin-top: 0px;
+}
+
+.dashboard{
+    list-style: none;
+    padding-left: 0px;
+    font-family: "RaleWay";
+}
+li{
+    padding: 10px 0px;
+
+}
+
+.underline{
+    position: relative;
+    text-decoration: none;
+}
+
+.underline::after{
+    position: absolute;
+    content: '';
+    height: 3px;
+    background: #34ccff;
+    width: 50px;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+}
+
+.services{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-top: 50px;
+    grid-gap: 40px;  
+}
+.grid-logos{
+    width: 80%;
+    border: solid 2px lightgray;
+    padding: 20px;
+}
+
+@media screen and (max-width:1600px) {
+     .content{
+         width: 90%;
+     }
+
+     .boody{
+         width: 90%;
+     }
+}
+
+@media screen and (max-width:1200px) {
+    
+}
+@media screen and (max-width:900px) {
+    .boody{
+        flex-direction: column;
+    }
+
+    .left{
+        width: 100%;
+    }
+
+    .right{
+        width: 100%;
+    }
+
+    .services{
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .services{
+        grid-template-columns: auto auto;
+    }
+}

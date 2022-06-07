@@ -1,0 +1,122 @@
+*{
+    margin: auto;
+}
+
+.footer{
+    padding:50px 50px 25px 50px;
+    color: white;
+    overflow: hidden;
+}
+.underline{
+    position: relative;
+    text-decoration: none;
+}
+
+.underline::after{
+    position: absolute;
+    content: '';
+    height: 3px;
+    background: #34ccff;
+    width: 50px;
+    bottom: -8px;
+    left: 0;
+}
+
+.links{
+    display: flex;
+    margin-bottom: 50px;
+}
+ul{
+    list-style: none;
+    font-family: "RaleWay";
+    font-size: 14px;
+    padding-left: 0px;
+    margin-top: 20px;
+    li{
+        padding: 10px 0px;
+    }
+}
+
+.container{
+    width: 25%;
+    margin-top: 0px;
+}
+
+.field{
+    background: transparent;
+    outline: none;
+    height: 50px;
+    width: 60%;
+    border-radius: 25px 0px 0px 25px;
+    margin: 20px 0px;
+    color: white;
+    font-family: "RaleWay";
+    border: solid 2px;
+}
+
+.field-button{
+    background: transparent;
+    outline: none;
+    height: 57px;
+    width: 35%;
+    border-radius: 0px 25px 25px 0px;
+    color: white;
+    font-family: "RaleWay";
+    border: solid 2px;
+    border-left: none;
+}
+
+.end-footer{
+    display: flex;
+    margin-top: 20px;
+}
+.copy{
+    margin-left: 0px;
+}
+.icons{
+    font-size: 30px;
+    margin-right: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    i{
+        border: solid 1px lightgray;
+        padding: 20px;
+    }
+}
+@media screen and (max-width:1500px) {
+    .links{
+        display: grid;
+        grid-template-columns:auto auto;
+    }
+    .container{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .logo-image{
+        height: 50px;
+    }
+    
+}
+@media screen and (max-width:600px) {
+    .links{
+        display: block;
+    }
+
+    .end-footer{
+        flex-direction: column;
+    }
+    .icons{
+        margin: auto;
+        margin-top: 30px;
+    }
+    .copy{
+        margin: auto;
+    }
+    
+}
+@media screen and (max-width:500px) {
+    .footer{
+        padding: 20px;
+    } 
+}
+

@@ -1,0 +1,91 @@
+.body{
+    overflow: hidden;
+}
+.map{
+    height: 600px;
+    background-color: green;
+}
+
+.content{
+    margin-top: 50px;
+    padding: 50px 0px;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "RaleWay";
+    font-weight: 900;
+}
+
+.underline{
+    position: relative;
+    text-decoration: none;
+}
+
+.underline::after{
+    position: absolute;
+    content: '';
+    height: 3px;
+    background: #34ccff;
+    width: 50px;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.countries{
+    padding: 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.country{
+    width: 30%;
+}
+
+.country-title{
+    border: solid 1px;
+    padding: 15px;
+    width: fit-content;
+    text-align: center;
+}
+ul{
+    list-style: none;
+    font-family: "RaleWay";
+    color: #34ccff;
+    li{
+        padding: 5px 0px;
+    }
+}
+li:hover{
+    text-decoration: underline;
+}
+
+.country-list{
+    display: flex;
+}
+
+.list{
+    width: 50%;
+}
+
+@media screen and (max-width:1600px) {
+     
+}
+
+@media screen and (max-width:1200px) {
+    
+}
+@media screen and (max-width:900px) {
+    .countries{
+        flex-direction: column;
+        padding: 0px;
+        padding-left: 5px;
+    }
+    .country{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    
+}

@@ -1,0 +1,122 @@
+*{
+    margin:auto;
+}
+.body{
+    overflow: hidden;
+}
+.main{
+    padding: 80px 0px;
+    background-color: rgb(23,27,38);
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "RaleWay-dark";
+}
+
+.news{
+    margin-top: 30px;
+    display: flex;
+    width: 60%;
+}
+
+.left{
+    width: 68%;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+.news-content{
+    margin-bottom: 150px;
+}
+
+.right{
+    width: 28%;
+    margin-right: 0px;
+    margin-top: 0px;
+}
+i{
+    font-size: 30px;
+    color: #36ccff;
+}
+.heading:hover{
+    text-decoration: underline;
+}
+
+.link{
+    color: #36ccff;
+}
+
+.link:hover{
+    text-decoration: underline;
+}
+
+.pagination {
+    display: inline-block;
+    margin: 0px 0px 50px 0px;
+  }
+  
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+  }
+  
+  .pagination a.active {
+    background-color: #36ccff;
+    color: white;
+    border: 1px solid #36ccff;
+  }
+  
+  .pagination a:hover:not(.active) {background-color: #ddd;}
+
+  mat-form-field{
+      width: 100%;
+      font-family: 'RaleWay';
+  }
+
+  .search-buttons{
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      button{
+          background-color: black;
+          color: white;
+          border: none;
+          outline: none;
+          padding: 10px;
+          font-size: 22px;
+          margin: 5px;
+      }
+  }
+
+@media screen and (max-width:1600px) {
+    .news{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    
+}
+@media screen and (max-width:900px) {
+    .news{
+        flex-direction: column;
+    }
+
+    .left{
+        width: 100%;
+    }
+
+    .right{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    
+}

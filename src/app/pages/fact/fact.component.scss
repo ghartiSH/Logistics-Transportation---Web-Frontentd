@@ -1,0 +1,43 @@
+@import url(../people/people.component.scss);
+
+.container{
+    padding: 50px 0px;
+    display: flex;
+}
+
+i{
+    font-size: 80px;
+    margin-right: 20px;
+    margin-top: 0px;
+}
+
+.text{
+    width: 50%;
+    display: flex;
+    margin-top: 0px;
+    color: #828282;;
+}
+
+@media screen and (max-width:1600px) {
+     
+}
+
+@media screen and (max-width:1200px) {
+    
+}
+@media screen and (max-width:900px) {
+    .right{
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .container{
+        flex-direction: column;
+    }
+
+    .text{
+        width: 100%;
+        margin-top: 50px;
+    }
+}

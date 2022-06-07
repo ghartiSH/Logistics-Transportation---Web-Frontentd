@@ -1,0 +1,40 @@
+*{
+    margin: auto;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: "RaleWay-dark";
+}
+.half{
+    display: flex;
+}
+
+.half-field{
+    width: 49%;
+}
+.full-field{
+    width: 100%;
+}
+mat-form-field{
+    font-family: "RaleWay";
+}
+
+textarea{
+    height: 250px;
+}
+
+.button{
+    padding: 20px 50px;
+    background-color: black;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+}
+.left{
+    margin-left: 0px;
+}
+
+.right{
+    margin-right: 0px;
+}
+

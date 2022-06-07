@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+@font-face {
+    font-family: RaleWay;
+    src: url(assets/Raleway/Raleway-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: RaleWay-dark;
+    src: url(assets/Raleway/static/Raleway-ExtraBold.ttf);
+}
+
+p, button{
+    font-family: "RaleWay";
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "RaleWay-dark";
+}

@@ -1,0 +1,83 @@
+*{
+    margin: auto;
+}
+.bocy{
+    overflow: hidden;
+}
+
+.content{
+    width: 60%;
+    padding: 80px 0px;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: "RaleWay-dark";
+    line-height: 1.5em;
+}
+.achievement{
+    padding: 100px 0px;
+}
+
+.timeline{
+    padding-top: 80px;
+}
+
+.timeline-buttons{
+    margin-top: 100px;
+    width: 60%;
+    display: flex;
+    overflow: hidden;
+}
+
+.butt{
+    font-family: "RaleWay-dark";
+    font-size: 14px;
+    padding: 0px 20px;
+    font-size: 32px;
+    padding-top: 10px;
+    outline: none;
+    border: solid 1px lightgray;
+}
+
+.timeline-box{
+    width: 60%;
+    padding: 50px 0px;
+    display: flex;
+}
+
+.box{
+    width: 32%;
+    height: 250px;
+}
+@media screen and (max-width:1600px) {
+    .content{
+        width: 90%;
+    }
+
+    .timeline-buttons{
+        width: 90%;
+    }
+
+    .timeline-box{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    
+}
+@media screen and (max-width:900px) {
+    
+}
+
+@media screen and (max-width:500px) {
+    .timeline-box{
+        flex-direction: column;
+    }
+    .box{
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+
+

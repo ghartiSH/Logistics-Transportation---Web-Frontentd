@@ -1,0 +1,240 @@
+.body{
+    overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "RaleWay-dark";
+}
+.container{
+    width: 100%;
+    margin-top: 200px;
+    padding-bottom: 80px;
+}
+
+.inner-container{
+    margin: auto;
+    width: 65%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.homebox{
+    height: 220px;
+    color: white;
+    transition: 0.5s;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.home-box-button{
+    background: transparent;
+    color: white;
+    height: 40px;
+    width: 150px;
+    border-radius: 25px;
+    border: solid 1px white;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.homebox:hover{
+   margin-top: -20px;
+}
+
+mat-card{
+    color: white;
+}
+
+.service-box{
+    color: white;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    p{
+        color: #6b6b6b;
+    }
+}
+.service-content{
+    margin: auto;
+    width: 60%;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+i{
+    font-size: 60px;
+    margin-right: 20px;
+    color: #34ccff;
+}
+
+.service{
+    display: flex;
+    padding: 20px 20px 50px 20px;
+}
+
+.underline{
+    position: relative;
+    text-decoration: none;
+}
+
+.underline::after{
+    position: absolute;
+    content: '';
+    height: 3px;
+    background: #34ccff;
+    width: 50px;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.people{
+    width: 100%;
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.people-container{
+    margin: auto;
+    width: 60%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.people-box{
+    width: 23%;
+}
+
+.people-card{
+    padding: 50px 0px 0px 0px;
+    min-height: 410px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.people-text{
+    padding: 40px;
+    border-radius: 10px;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+    display: none;
+    transition: all 0.5s ease-in-out;
+}
+.people-profile{
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8));
+    padding: 10px;
+    display: flex;
+    width: 95%;
+}
+
+.profile-image{
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.people-card:hover{
+    .people-text{
+        display: block;
+    }
+}
+
+.end-body{
+    padding: 80px 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.end-box{
+    width: 20%;
+}
+a{
+    font-family: "RaleWay";
+    font-size: 16px;
+    color: #34ccff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1600px) {
+    .inner-container{
+        width: 90%;
+    }
+
+    .service-content{
+        width: 90%;
+    }
+
+    .people-container{
+        width: 90%;
+    }
+
+    .end-body{
+        padding: 80px 20px;
+    }
+    
+}
+
+@media screen and (max-width: 1200px) {
+    .inner-container{
+        width: 95%;
+    }
+    
+}
+
+@media screen and (max-width: 950px) {
+    .inner-container{
+        width: 95%;
+        flex-direction: column;
+    }
+
+    .homebox{
+        width: 100%;
+        margin:50px 0px 0px 0px;
+    }
+
+    .service-content{
+        display: grid;
+        grid-template-columns: auto;
+       
+    }
+
+    .people-container{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .people-box{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .end-body{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .end-box{
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:450px) {
+
+    .people-container{
+        grid-template-columns: auto;
+    }
+    .end-body{
+        grid-template-columns: auto;
+    }
+}

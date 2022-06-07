@@ -1,0 +1,87 @@
+<div class="header">
+    <section class="logo">
+        <img src="assets/images/logo.png" alt="" class="logo-image">
+    </section>
+    <section class="list">
+        <ul>
+            <li><a routerLink="/home">HOME</a></li>
+            <li >
+                <button [matMenuTriggerFor]="aboutus" class="link">COMPANY <i class="bi bi-plus"></i></button>
+                <mat-menu #aboutus="matMenu">
+                    <button class="click" mat-menu-item routerLink="/aboutus">About us</button>
+                    <mat-divider></mat-divider>
+                    <button class="click" mat-menu-item routerLink="/timeline">Company Timeline</button>
+                    <mat-divider></mat-divider>
+                    <button class="click" mat-menu-item routerLink="/customers">Our Customers</button>
+                    <mat-divider></mat-divider>
+                    <button class="click" mat-menu-item routerLink="/people">Our People</button>
+                    <mat-divider></mat-divider>
+                    <button class="click" mat-menu-item routerLink="/fact">Facts and Figures</button>
+                    <mat-divider></mat-divider>
+                    <button class="click" mat-menu-item routerLink="/history">History</button>
+                </mat-menu>
+            </li>
+            <li>
+                <button [matMenuTriggerFor]="services" class="link">SERVICES <i class="bi bi-plus"></i></button>
+                <mat-menu #services ="matMenu">
+                    <button class="click" mat-menu-item [matMenuTriggerFor]="logistics">Logistics <i class="bi bi-plus"></i></button>
+                        <mat-menu #logistics="matMenu">
+                            <button class="click" mat-menu-item routerLink="/logistics">Logistics</button>
+                            <mat-divider></mat-divider>
+                            <button class="click" mat-menu-item routerLink="/air">Air Freight</button>
+                            <mat-divider></mat-divider>
+                            <button class="click" mat-menu-item routerLink="/sea">Sea Freight</button>
+                            <mat-divider></mat-divider>
+                            <button class="click" mat-menu-item routerLink="/overland">Overland Network</button>
+                            <mat-divider></mat-divider>
+                            <button class="click" mat-menu-item routerLink="/project">Project Transport</button>
+                        </mat-menu>
+                    <mat-divider></mat-divider>
+                    <button class="click" mat-menu-item routerLink="/warehousing">Warehousing</button>
+                    <mat-divider></mat-divider>
+                    <button class="click" mat-menu-item routerLink="/value">Value Added Services</button>
+                </mat-menu>
+            </li>
+            <li routerLink="/global">GLOBAL COVERGE</li>
+            <li>
+                <button [matMenuTriggerFor]="media" class="link">MEDIA <i class="bi bi-plus"></i></button>
+                <mat-menu #media="matMenu">
+                    <button class="click" mat-menu-item routerLink="/news">News & Blog</button>
+                    <mat-divider></mat-divider>
+                    <button class="click" mat-menu-item routerLink="/ads">Ads & Promos 01</button>
+                </mat-menu>
+            </li>
+            <li routerLink="/contact">CONTACT</li>
+            <section class="resp1">
+                <li>REQUEST A RATE</li>
+                <li>TRACKING</li>
+            </section>
+            <section class="resp2">
+                <li class="button-list" style="background-color: black; color: white;" (click)="openDialog()"> REQUEST A RATE</li>
+                <li class="button-list" style="background-color: #ffd200;margin-left: 20px;" (click)="openTracking()"> TRACKING </li>
+            </section>
+            <li style="border: solid 1px; border-radius: 100px; margin-left: 20px;padding:8px 15px;"><mat-icon>search</mat-icon></li>
+            <li style="border: solid 1px; border-radius: 200px; margin-left: 20px; padding: 8px 15px;"><mat-icon>flag</mat-icon></li>
+        </ul>
+        <section class="resp3">
+           <button class="link" [matMenuTriggerFor]="responsive"><mat-icon>menu</mat-icon></button>
+           <mat-menu #responsive="matMenu" class="responsive-menu" xPosition="before">
+            <button class="click" mat-menu-item routerLink="/home">HOME</button>
+            <mat-divider></mat-divider>
+            <button class="click" mat-menu-item [matMenuTriggerFor]="aboutus">COMPANY</button>
+            <mat-divider></mat-divider>
+            <button class="click" mat-menu-item [matMenuTriggerFor]="services">SERVICES</button>
+            <mat-divider></mat-divider>
+            <button class="click" mat-menu-item routerLink="/global">GLOBAL COVERAGE</button>
+            <mat-divider></mat-divider>
+            <button class="click" mat-menu-item [matMenuTriggerFor]="media">MEDIA</button>
+            <mat-divider></mat-divider>
+            <button class="click" mat-menu-item routerLink="/contact">CONTACT</button>
+            <mat-divider></mat-divider>
+            <button class="click" mat-menu-item (click)="openDialog()">REQUEST A RATE</button>
+            <mat-divider></mat-divider>
+            <button class="click" mat-menu-item (click)="openTracking()">TRACKING</button>
+        </mat-menu>
+        </section>
+    </section>
+</div>
